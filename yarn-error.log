@@ -1,0 +1,74 @@
+Arguments: 
+  /Users/wenke/.nvm/versions/node/v14.15.1/bin/node /Users/wenke/.nvm/versions/node/v14.15.1/bin/yarn
+
+PATH: 
+  /Users/wenke/.pyenv/plugins/pyenv-virtualenv/shims:/Users/wenke/.pyenv/shims:/Users/wenke/.pyenv/bin:/usr/local/opt/curl/bin:/usr/local/opt/ruby/bin:/Users/wenke/.cargo/bin:/Users/wenke/.nvm/versions/node/v14.15.1/bin:/Users/wenke/.gem/bin:/usr/local/opt/mysql/bin:/usr/local/sbin:/usr/local/Cellar/vim/7.4.2334/bin:/Users/wenke/Documents/tools/erlang:/Applications/XAMPP/xamppfiles/htdocs:/usr/local/opt/gnu-sed/libexec/gnubin:/Applications/XAMPP/xamppfiles/htdocs/cocos2d-x-3.12/templates:/Users/wenke/Documents/tools/android/apache-ant-1.9.6/bin:/Applications/XAMPP/xamppfiles/htdocs/cocos2d-x-3.12/tools/cocos2d-console/bin:/usr/local/Cellar/perl/5.20.1/bin:/usr/local/bin:/usr/local/share/python:/Applications/XAMPP/xamppfiles/bin:/usr/local/bin:/Users/wenke/Documents/cocos2d/cocos2d-x-3.2/tools/cocos2d-console/bin:/usr/local/bin:/usr/local/bin:/usr/local/share/python:/Applications/XAMPP/xamppfiles/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/wenke/Documents/tools/android/android-ndk-r10c:/Users/wenke/Library/Android/sdk/tools:/Users/wenke/Library/Android/sdk/platform-tools:/Users/wenke/Documents/tools/go/1.15.6/bin:/Users/wenke/go/bin:/Users/wenke/Documents/tools/mercurial-3.2:/Users/wenke/go/src/github.com/mitchellh/gox:/usr/local/zookeeper-3.4.6/bin:/Users/wenke/opt/cassandra/bin:/Users/wenke/autossh:/Users/wenke/Documents/tools/Maven/apache-maven-3.5.0/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/bin:/usr/local/Cellar/gradle/4.0.1/libexec/bin:/Applications/kdiff3.app/Contents/MacOS:/usr/local/arcanist/bin:/Users/wenke/Documents/tools/play/activator-dist-1.3.12/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.npmjs.org
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+
+npm manifest: 
+  {
+    "name": "hdkey",
+    "version": "1.1.0",
+    "description": "Bitcoin BIP32 hierarchical deterministic keys",
+    "main": "lib/hdkey.js",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/cryptocoinjs/hdkey"
+    },
+    "license": "MIT",
+    "keywords": [
+      "bitcoin",
+      "bip32",
+      "bip",
+      "key",
+      "hierarchical",
+      "deterministic",
+      "crypto"
+    ],
+    "bugs": {
+      "url": "https://github.com/cryptocoinjs/hdkey/issues"
+    },
+    "homepage": "https://github.com/cryptocoinjs/hdkey",
+    "devDependencies": {
+      "bigi": "^1.1.0",
+      "coveralls": "^2.10.0",
+      "ecurve": "^1.0.0",
+      "istanbul": "^0.3.17",
+      "mocha": "^2.2.5",
+      "mocha-lcov-reporter": "0.0.1",
+      "mochify": "^2.10.0",
+      "secure-random": "^1.0.0",
+      "standard": "^7.1.1"
+    },
+    "dependencies": {
+      "coinstring": "^2.0.0",
+      "safe-buffer": "^5.1.1",
+      "secp256k1": "^3.0.1"
+    },
+    "scripts": {
+      "lint": "standard",
+      "browser-test": "mochify --wd -R spec",
+      "test": "standard && mocha",
+      "unit": "mocha",
+      "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
+      "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
