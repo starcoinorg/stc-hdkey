@@ -1,6 +1,6 @@
 {
   "name": "@starcoin/stc-hdkey",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Starcoin BIP32 hierarchical deterministic keys",
   "main": "lib/hdkey.js",
   "repository": {
@@ -33,7 +33,7 @@
     "standard": "^7.1.1"
   },
   "dependencies": {
-    "@starcoin/stc-util": "^0.2.0",
+    "@starcoin/stc-util": "^0.3.0",
     "coinstring": "^2.0.0",
     "safe-buffer": "^5.1.1",
     "secp256k1": "^3.0.1"
